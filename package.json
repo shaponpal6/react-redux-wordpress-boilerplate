@@ -7,18 +7,6 @@
     "npm": ">=3"
   },
   "scripts": {
-
-    "buildwp": "wp-scripts build",
-    "build:custom": "wp-scripts build entry-one.js entry-two.js --output-path=custom",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "startwp": "wp-scripts start",
-    "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js",
-
     "preinstall": "node tools/nodeVersionCheck.js",
     "start-message": "babel-node tools/startMessage.js",
     "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
@@ -32,7 +20,7 @@
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run lint && npm run test && npm run clean-dist",
     "build": "babel-node tools/build.js && npm run open:dist",
-    "prod": "babel-node tools/build-prod.js",
+    "prod": "npm run lint && npm run test && npm run clean-dist && babel-node tools/build-prod.js",
     "test": "jest",
     "test:CI": "jest",
     "test:cover": "npm run test -- --coverage ",
