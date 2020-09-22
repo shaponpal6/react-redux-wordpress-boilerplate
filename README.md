@@ -121,7 +121,7 @@ Why Slingshot?
         wp_enqueue_script( 'cwv-main', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.js', array( 'wp-element' ), time(), true ); // Only use `time()` for development
         
          // CSS
-        wp_enqueue_script( 'cwv-main-css', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.css');
+        wp_enqueue_style( 'cwv-main-css', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.css');
       
       }
     }
