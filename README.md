@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/3129129/22811426/bb69dc06-ef0c-11e6-8092-a0bea9060b35.png"/>
-</p>
+<h1 align="center">
+  React + Redux + WordPress Boilerplate
+</h1>
 
 ---
 
@@ -87,6 +87,49 @@ Why Slingshot?
 
 ---
 
+## WordPress 
+
+ **Run Production Ready app for WordPress **
+
+    `npm run prod`
+ 
+ > Note: This will build app with external uses of  `React ` and  `ReactDOM `
+ 
+#webpack.config.prod.js:
+
+  `externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+  },
+  `
+  
+  
+  
+  **Now Load Script for Wordpress as Plugin**
+  
+  	`
+    add_action( 'init', function() {
+
+      add_filter( 'script_loader_tag', function( $tag, $handle ) {
+        if ( ! preg_match( '/^cwv-/', $handle ) ) { return $tag; }
+        return str_replace( ' src', ' async defer src', $tag );
+      }, 10, 2 );
+      
+      add_action( 'wp_enqueue_scripts', function() {
+      
+        // JS
+        wp_enqueue_script( 'cwv-main', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.js', array( 'wp-element' ), time(), true ); // Only use `time()` for development
+        
+         // CSS
+        wp_enqueue_style( 'cwv-main-css', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.css');
+      
+      }
+    }
+    `
+    
+
+---
+
 ## Having Issues? Try these things first
 
 1. Make sure you ran all steps in [Get started](#get-started) including the [initial machine setup](#initial-machine-setup).
@@ -123,6 +166,8 @@ Why Slingshot?
 10. Rebuild node-sass with `npm rebuild node-sass` if you are having and error like `Node Sass does not yet support your current environment on macOS XXX` after an initial `npm start -s`.
 
 ---
+
+
 
 ## Technologies
 
