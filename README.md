@@ -96,7 +96,7 @@ Why Slingshot?
 
  **Run Production Ready app for WordPress **
 
-    `npm run prod`
+  `npm run prod`
  
  > Note: This will build app with external uses of  `React ` and  `ReactDOM `
  
