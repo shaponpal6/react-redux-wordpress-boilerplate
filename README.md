@@ -1,9 +1,12 @@
 <h1 align="center">
-  React + Redux + WordPress Boilerplate
+  React + Redux Boilerplate (WordPress Ready)
 </h1>
 <p align="center">
-  Enspire By: <a href="https://github.com/coryhouse/react-slingshot" target="_blank">react-slingshot</a>
+  Enspire By: <a href="https://github.com/coryhouse/react-slingshot" target="_blank">react-slingshot</a> ||
+  Live Demo: <a href="https://sptodo.netlify.app/" target="_blank">See Demo</a>
 </p>
+
+
 
 
 
