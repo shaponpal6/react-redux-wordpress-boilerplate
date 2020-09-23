@@ -17,8 +17,6 @@ const todos = (state = [], action) => {
       return state;
   }
 
-  // setter
-  localStorage.setItem('sptodo', state);
 };
 
 export default todos;

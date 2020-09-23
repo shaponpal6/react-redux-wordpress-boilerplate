@@ -1,9 +1,7 @@
 import { createStore } from 'redux';
 import rootReducer from '../reducers';
 
-
-
-const INITIAL_STATE = localStorage.getItem('sptodo') || {};
+const INITIAL_STATE = {};
 const store = createStore(rootReducer, INITIAL_STATE);
 
-export default store; 
+export default store;
