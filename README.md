@@ -122,10 +122,10 @@ Why Slingshot?
       add_action( 'wp_enqueue_scripts', function() {
       
         // JS
-        wp_enqueue_script( 'cwv-main', get_site_url() . '/wp-content/plugins/{your plaugin name}/assets/main.js', array( 'wp-element' ), time(), true ); // Only use `time()` for development
+        wp_enqueue_script( 'cwv-main', get_site_url() . '/wp-content/plugins/{your-plugin-name}/assets/main.js', array( 'wp-element' ), time(), true ); // Only use `time()` for development
         
          // CSS
-        wp_enqueue_style( 'cwv-main-css', get_site_url() . '/wp-content/plugins/{your plaugin name}/assets/main.css');
+        wp_enqueue_style( 'cwv-main-css', get_site_url() . '/wp-content/plugins/{your-plugin-name}/assets/main.css');
       
       }
     }
