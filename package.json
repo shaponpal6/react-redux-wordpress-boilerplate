@@ -2,7 +2,7 @@
   "name": "react-redux-wordpress-boilerplate",
   "version": "1.0.0",
   "description": "react-redux-wordpress-boilerplate",
-  "homepage": "/wp-content/plugins/{your-plugin-name}/assets/",
+  "homepage": "/wp-content/plugins/wpcwv/assets/",
   "engines": {
     "node": ">=8",
     "npm": ">=3"
