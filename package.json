@@ -1,7 +1,8 @@
 {
-  "name": "cwv-chat-with-visitors-widget",
-  "version": "0.1.0",
-  "description": "cwv-chat-with-visitors-widget",
+  "name": "react-redux-wordpress-boilerplate",
+  "version": "1.0.0",
+  "description": "react-redux-wordpress-boilerplate",
+  "homepage": "/wp-content/plugins/{your-plugin-name}/assets/"
   "engines": {
     "node": ">=8",
     "npm": ">=3"
