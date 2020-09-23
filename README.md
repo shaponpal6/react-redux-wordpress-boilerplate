@@ -133,16 +133,16 @@ Why Slingshot?
 ** Now Use Short Code To load React App in Wordpress **
     
     
-    `add_shortcode( 'react', function( $atts ) {
-			$default_atts = array();
-			$args = shortcode_atts( $default_atts, $atts );
-		  
-			return "<div id='app'>Hello React App </div>";
-		  });`
+    add_shortcode( 'react', function( $atts ) {
+        $default_atts = array();
+        $args = shortcode_atts( $default_atts, $atts );
+
+        return "<div id='app'>Hello React App </div>";
+		});
       
 ** Now Use The Short Code in WordPress ***
       
-      `[react]`
+      [react]
       
 
 >> If you have any issue please contact me.
