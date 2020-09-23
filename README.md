@@ -145,6 +145,8 @@ Why Slingshot?
       [react]
       
 
+Read this article to know more about this.. https://www.digitalocean.com/community/tutorials/how-to-embed-a-react-application-in-wordpress-on-ubuntu-18-04
+
 >> If you have any issue please contact me.
     
 
