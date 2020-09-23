@@ -112,7 +112,7 @@ Why Slingshot?
   
   **Now Load Script for Wordpress as Plugin**
   
-  	`add_action( 'init', function() {
+  	add_action( 'init', function() {
 
       add_filter( 'script_loader_tag', function( $tag, $handle ) {
         if ( ! preg_match( '/^cwv-/', $handle ) ) { return $tag; }
@@ -128,7 +128,7 @@ Why Slingshot?
         wp_enqueue_style( 'cwv-main-css', get_site_url() . '/wp-content/plugins/wpcwv/assets/main.css');
       
       }
-    }`
+    }
     
 ** Now Use Short Code To load React App in Wordpress **
     
