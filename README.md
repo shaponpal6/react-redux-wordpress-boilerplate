@@ -2,7 +2,7 @@
   React + Redux + WordPress Boilerplate
 </h1>
 <p align="center">
-  Enspire By: [react-slingshot](https://github.com/coryhouse/react-slingshot)
+  Enspire By: <a href="https://github.com/coryhouse/react-slingshot" target="_blank">react-slingshot</a>
 </p>
 
 
