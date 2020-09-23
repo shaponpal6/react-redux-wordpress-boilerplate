@@ -1,14 +1,13 @@
 import React from 'react';
-import Footer from '../Footer';
+import Header from '../Header';
 import AddTodo from '../../containers/AddTodo';
 import VisibleTodoList from '../../containers/VisibleTodoList';
 import './app.module.css';
 
-// console.log(styles);
-
 const App = () => (
   <div className='container'>
-    <Footer />
+    <h2 className='title'>React Redux App</h2>
+    <Header />
     <VisibleTodoList />
     <AddTodo />
   </div>

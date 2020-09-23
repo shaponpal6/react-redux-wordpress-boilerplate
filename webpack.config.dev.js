@@ -99,10 +99,6 @@ export default {
         ],
       },
       {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass', 'scss'], 
-      },
-      {
         test: /(\.css|\.scss|\.sass)$/,
         use: [
           'style-loader',
@@ -130,6 +126,14 @@ export default {
           },
         ],
       },
+      {
+        test: /\.less$/,
+       use: [
+         "style-loader",
+         "css-loader",
+         "less-loader"
+       ]
+      }
     ],
   },
 };

@@ -1,7 +1,7 @@
-.footer{
+.header{
     display: flex;
 }
-.footer button{
+.header button{
     display: flex;
     background: #d235d2;
     outline: 0;
