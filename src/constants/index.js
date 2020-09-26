@@ -1,2 +1,0 @@
-
-export const CURRENT_PAGE_FILTER = 'CURRENT_PAGE_FILTER';
